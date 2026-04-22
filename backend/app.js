@@ -14,6 +14,7 @@ const statsRoutes = require('./routes/statsRoutes');
 const sellerRoutes = require('./routes/sellerRoutes');
 const transactionRoutes = require('./routes/transactionRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 app.use('/api/products', productRoutes);
 app.use('/api/auth', authRoutes);
@@ -22,6 +23,7 @@ app.use('/api/stats', statsRoutes);
 app.use('/api/seller-products', sellerRoutes);
 app.use('/api/transactions', transactionRoutes);
 app.use('/api/categories', categoryRoutes);
+app.use('/api/users', userRoutes);
 
 app.get('/', (req, res) => {
   res.send('Inventory API is working 🚀');
